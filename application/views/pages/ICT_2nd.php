@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome</title>
+	<title>ICT 2nd year</title>
 </head>
 <body>
-	hello motherfucker 
+	ICT 2nd year
 </body>
 </html>
