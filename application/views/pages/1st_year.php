@@ -5,5 +5,6 @@
 </head>
 <body>
 	1st year 
+	<h1><?php echo $title; ?></h1>
 </body>
 </html>
