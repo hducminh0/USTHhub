@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>USTHhub</title>
-    <link href="<?php echo base_url(); ?>index.php/views/pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url(); ?>index.php/views/pages/css/scrolling-nav.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/scrolling-nav.css" rel="stylesheet">
     <link rel="icon" href="https://image.flaticon.com/icons/svg/580/580855.svg">
   </head>
 
@@ -16,7 +16,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger ml-auto" href="homepage.html">USTHhub</a>
+        <a class="navbar-brand js-scroll-trigger ml-auto" href="<?php echo base_url() ?>home">USTHhub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,9 +28,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ict">I.C.T<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="ict_2.html">2nd year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url(); ?>ict_2">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="ict_3.html">3th year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url(); ?>ict_3">3th year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -73,7 +73,6 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
-            <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
             <li class="nav-item"><a onclick="document.getElementById('id01').style.display='block'" href="#" class="nav-link">Login</a></li>
 
             <!-- popuplogin -->
@@ -174,11 +173,11 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/scrolling-nav.js"></script>
   </body>
 </html>
