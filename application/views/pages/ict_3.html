@@ -74,45 +74,7 @@
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
             <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
-            <li class="nav-item"><a onclick="document.getElementById('id01').style.display='block'" href="#" class="nav-link">Login</a></li>
-
-            <!-- popuplogin -->
-            <div id="id01" class="modal">
-              <form class="modal-content animate" action="/action_page.php">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <img src="image/user.png" alt="Avatar" class="avatar">
-                </div>
-
-                <div id="popuplogin" class="container">
-                  <label><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-
-                  <label><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                  <button type="submit">Login</button>
-                  <input type="checkbox" checked="checked"> Remember me
-                </div>
-
-                <div class="container" style="background-color:#f1f1f1">
-                  <button id="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-              </form>
-            </div>
-            <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
-            <!-- /popuplogin -->
+            <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
           </ul>
         </div>
       </div>
@@ -134,12 +96,12 @@
           </tr>
           <tr class="table-danger text-center">
             <th scope="col"></th>
-            <th scope="col">Mon, 27/11</th>
-            <th scope="col">Tue, 28/11</th>
-            <th scope="col">Wed, 29/11</th>
-            <th scope="col">Thus, 30/11</th>
-            <th scope="col">Fri, 1/12</th>
-            <th scope="col">Sat, 2/12</th>
+            <th class="col-md-2" scope="col">Mon, 27/11</th>
+            <th class="col-md-2" scope="col">Tue, 28/11</th>
+            <th class="col-md-2" scope="col">Wed, 29/11</th>
+            <th class="col-md-2" scope="col">Thus, 30/11</th>
+            <th class="col-md-2" scope="col">Fri, 1/12</th>
+            <th class="col-md-2" scope="col">Sat, 2/12</th>
           </tr>
         </thead>
         <tbody>
@@ -158,15 +120,6 @@
             <td>16:00 – 18:00<br>Future Tech Talents - USTH Auditorium</td>
             <td>13:30 – 16:30<br>Advanced Database - Dr. Nguyen Hoang Ha - 710/USTH</td>
             <td>14:00 – 16:00<br>Final exam: Web apps development, 710/USTH</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th class="table-danger" scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
           </tr>

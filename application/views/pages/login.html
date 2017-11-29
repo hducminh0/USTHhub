@@ -10,9 +10,72 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link rel="icon" href="https://image.flaticon.com/icons/svg/580/580855.svg">
   </head>
+  <style>
+    form {
+        border: 3px solid #f1f1f1;
+    }
 
-  <body id="page-top">
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
 
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #343a40;
+    }
+
+    .imgcontainer {
+        text-align: center;
+        margin: 80px 0 0 0;
+    }
+
+    img.avatar {
+        width: 10%;
+        border-radius: 20%;
+    }
+
+    #login.container {
+        padding: 30px;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+  </style>
+
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container-fluid">
@@ -80,68 +143,43 @@
       </div>
     </nav>
 
-    <header class="bg-light text-black">
-      <div class="container text-left">
-        <h1>Information and Communication Technology: Second Year</h1>
-        <p class="lead">The ting goes skrrrahh, pap, pap, ka-ka-ka. Skidiki-pap-pap, and a pu-pu-pudrrrr-boom. Skya, du-du-ku-ku-dun-dun. Poom, poom, you don' know.</p>
-      </div>
-    </header>
+            <form action="/action_page.php">
+              <div class="imgcontainer">
+                <img src="image/user.png" alt="Avatar" class="avatar">
+              </div>
+              <div id="login" class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <!-- table -->
-    <div class="container">
-      <table class="table table-bordered table-primary">
-        <thead>
-          <tr class="table-secondary text-center">
-            <th colspan="7">27 thg 11 – 3 thg 12, 2017</th>
-          </tr>
-          <tr class="table-danger text-center">
-            <th scope="col"></th>
-            <th class="col-md-2" scope="col">Mon, 27/11</th>
-            <th class="col-md-2" scope="col">Tue, 28/11</th>
-            <th class="col-md-2" scope="col">Wed, 29/11</th>
-            <th class="col-md-2" scope="col">Thus, 30/11</th>
-            <th class="col-md-2" scope="col">Fri, 1/12</th>
-            <th class="col-md-2" scope="col">Sat, 2/12</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="table-danger" scope="row">1</th>
-            <td></td>
-            <td>08:30 – 12:00<br>Mobile apps application - Dr. Tran Giang Son - 604/USTH</td>
-            <td>08:30 – 11:30<br>Image Processing - Dr. Nghiem Thi Phuong - 710/USTH</td>
-            <td></td>
-            <td>08:30 – 11:30<br>Image Processing - Dr. Nghiem Thi Phuong - 710/USTH</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th class="table-danger" scope="row">2</th>
-            <td>14:00 – 16:00<br>Final exam: Object-Oriented System Analysis and Design, 710/USTH</td>
-            <td>16:00 – 18:00<br>Future Tech Talents - USTH Auditorium</td>
-            <td>13:30 – 16:30<br>Advanced Database - Dr. Nguyen Hoang Ha - 710/USTH</td>
-            <td>14:00 – 16:00<br>Final exam: Web apps development, 710/USTH</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; USTHhub 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked"> Remember me
+
+                <div style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </div>
+            </form>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+            <!-- Footer -->
+            <footer class="py-5 bg-dark">
+              <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; USTHhub 2017</p>
+              </div>
+              <!-- /.container -->
+            </footer>
+
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Custom JavaScript for this theme -->
+            <script src="js/scrolling-nav.js"></script>
   </body>
+
 </html>
