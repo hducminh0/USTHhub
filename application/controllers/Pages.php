@@ -5,8 +5,17 @@
 				show_404();
 			}
 
-			$data['title'] = ucfirst($page);
-			$this->load->view('pages/'.$page, $data);
+			if ($page == 'home') {
+				$data['title'] = ucfirst($page);
+				$this->load->view('pages/'.$page, $data);
+			}
+			else
+			{	
+				$data['timetable_date'] = $this->ict_table_model->get_timetable_ict2();
+				$data['timetable'] = $data['timetable_date'];
+				$data['title'] = ucfirst($page);
+				$this->load->view('pages/'.$page, $data);
+			}
 		}
 	}
 ?>
