@@ -156,20 +156,20 @@
                 <button type="submit">Login</button>
                 <input type="checkbox" checked="checked"> Remember me
 
-                <div style="background-color:#f1f1f1">
+                <div id="cc" style="background-color:#f1f1f1">
                   <button type="button" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
+                  <span class="psw">Forgot <a href="<?php echo base_url() ?>pages/view/course_ict">password?</a></span>
                 </div>
               </div>
             </form>
 
 
             <!-- Footer -->
-            <footer class="py-5 bg-dark">
+            <footer class="py-5 bg-dark fixed-bottom">
               <div class="container">
                 <p class="m-0 text-center text-white">Copyright &copy; USTHhub 2017</p>
               </div>
-              <!-- /.container -->
+            <!-- /.container -->
             </footer>
 
             <!-- Bootstrap core JavaScript -->

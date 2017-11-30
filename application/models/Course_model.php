@@ -5,8 +5,18 @@
 			$this->load->database();
 		}
 
-		public function get_ict3_courses_panel(){
-			$query = $this->db->query("SELECT CourseName, Status from course WHERE DepartmentID = 1");
+		public function get_ict3_courses_ongoing(){
+			$query = $this->db->query("SELECT CourseName, CourseID from course WHERE DepartmentID = 1 AND CourseStatus = 'Ongoing'");
+			return $query->result_array();
+		}
+
+		public function get_ict3_courses_upcomming(){
+			$query = $this->db->query("SELECT CourseName, CourseID from course WHERE DepartmentID = 1 AND CourseStatus = 'Soon'");
+			return $query->result_array();
+		}
+
+		public function get_ict3_courses_completed(){
+			$query = $this->db->query("SELECT CourseName, CourseID from course WHERE DepartmentID = 1 AND CourseStatus = 'Completed'");
 			return $query->result_array();
 		}
 
