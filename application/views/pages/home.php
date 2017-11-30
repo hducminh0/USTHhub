@@ -73,60 +73,49 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
-            <li class="nav-item"><a onclick="document.getElementById('id01').style.display='block'" href="#" class="nav-link">Login</a></li>
-
-            <!-- popuplogin -->
-            <div id="id01" class="modal">
-              <form class="modal-content animate" action="/action_page.php">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <img src="image/user.png" alt="Avatar" class="avatar">
-                </div>
-
-                <div id="popuplogin" class="container">
-                  <label><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-
-                  <label><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                  <button type="submit">Login</button>
-                  <input type="checkbox" checked="checked"> Remember me
-                </div>
-
-                <div class="container" style="background-color:#f1f1f1">
-                  <button id="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-              </form>
-            </div>
-            <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
-            <!-- /popuplogin -->
-
+            <li class="nav-item"><a href="<?php echo base_url() ?>pages/view/login" class="nav-link">Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="bg-primary text-white">
-      <div class="container text-center">
+    <!-- <header class="bg-primary text-white">
+      <div class="container text-center"> --><!-- 
         <h1>Welcome to USTHhub</h1>
-        <p class="lead">The ting goes skrrrahh, pap, pap, ka-ka-ka. Skidiki-pap-pap, and a pu-pu-pudrrrr-boom. Skya, du-du-ku-ku-dun-dun. Poom, poom, you don' know.</p>
+        <p class="lead">The ting goes skrrrahh, pap, pap, ka-ka-ka. Skidiki-pap-pap, and a pu-pu-pudrrrr-boom. Skya, du-du-ku-ku-dun-dun. Poom, poom, you don' know.</p> -->
+        <div id="demo" class="carousel slideshow row " data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="<?php echo base_url() ?>assets/image/usth.jpg" alt="Los Angeles" width="100%" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="<?php echo base_url() ?>assets/image/usthhall.jpg" alt="Chicago" width="100%" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="<?php echo base_url() ?>assets/image/USTHCampus03.jpg" alt="campus" width="100%" height="600">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-    </header>
+    <!-- </header> -->
 
     <section id="about">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>About</h2>
@@ -152,43 +141,49 @@ USTH always focuses on promoting the high quality of training courses in paralle
       </div>
     </section> -->
 
-    <section id="contact" class="bg-light">
-      <div class="container">
+    <section id="services" class="table-secondary">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">
-University of Science and Technology of Hanoi
-Training and Services Bulding, Vietnam Academy of Science and Technology 
-Add: 18 Hoang Quoc Viet, Cau Giay District, Hanoi 
-Tel: (+84- 24) 37 91 69 60 
-Email: usth.info@usth.edu.vn 
-
-Bachelor
-Tel: (+84- 24) 37 91 77 48 
-Email: admission@usth.edu.vn 
-
-Master
-Tel: (+84- 24) 37 91 77 47 / 37 91 86 18
-PMAB: admission-bio@usth.edu.vn 
-AMSN: admission-nano@usth.edu.vn 
-ICT: admission-ict@usth.edu.vn 
-WEO: admission-weo@usth.edu.vn 
-SA: admission-space@usth.edu.vn 
-EN: admission-energy@usth.edu.vn 
-
-Student Affairs
-Tel: (+84- 24) 37 91 72 05 
-Email: pham-thi-thanh.nga@usth.edu.vn </p>
+        	<div class="col-lg-2 ml-auto ">
+            	<img id="boiron" src="<?php echo base_url() ?>assets/image/img_4814.jpg" alt="boiron">
+          	</div>
+          <div class="col-lg-6 mr-auto">
+            <h2>
+						Message from Rector
+            </h2>
+            <p>Dear All,<br>
+            <br>
+            On behalf of the Rector Board of USTH, I would like to thank you for your interest in and support for USTH, and warmly welcome you all to the first public international university of excellence in Hanoi!<br>
+            <br>
+            With the ambition to provide high quality human resource in science and technology and become&nbsp;an excellent research oriented institution in Vietnam, USTH is committed to academic and research excellence students, satisfaction and among Top 200 universities in the world by 2030.<br>
+            <br>
+            USTH is proud to adopt the Bologna education...</p>
+            <br>
+            <i>Prof. Patrick Boiron</i>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="contact">
+      <div class="container-fluid">
+         <div class="row">
+           <div class="col-lg-8 mx-auto">
+             <h2>Contact us</h2>
+             <p class="lead">Ahihi</p>
+           </div>
+          
+         
+         </div>
+       
+       </div>
+     </section>
+
+
     <!-- Footer -->
     <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; USTHhub 2017</p>
+      <div class="container text-white">
++        <p class="m-0 text-center">Copyright &copy; USTHhub 2017</p>
       </div>
       <!-- /.container -->
     </footer>
