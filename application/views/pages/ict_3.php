@@ -16,7 +16,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger ml-auto" href="<?php echo base_url() ?>home">USTHhub</a>
+        <a class="navbar-brand js-scroll-trigger ml-auto" href="<?php echo base_url() ?>">USTHhub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,9 +28,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ict">I.C.T<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="<?php echo base_url(); ?>ict_2">2nd year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_2">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="<?php echo base_url(); ?>ict_3">3th year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_3">3th year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
