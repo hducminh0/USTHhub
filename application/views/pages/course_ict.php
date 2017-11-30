@@ -89,7 +89,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link mr-lg-2" href="profile.html" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link mr-lg-2" href="<?php echo base_url() ?>pages/view/profile" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-user-circle-o"></i>
             <span class="d-lg-none">Profile
               <!-- <span class="badge badge-pill badge-warning">6 New</span> -->

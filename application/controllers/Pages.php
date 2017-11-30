@@ -39,6 +39,15 @@
 					$data['mobile'] = $this->Course_model->get_ict3_mobile();
 					$this->load->view('pages/'.$page, $data);
 				}
+				elseif ($page == 'profile') 
+				{
+					// $data['profile'] = $this->User_model->
+					$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
+					$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
+					$data['completed'] = $this->Course_model->get_ict3_courses_completed();
+					$data['title'] = $page;
+					$this->load->view('pages/'.$page, $data);
+				}
 
 			}
 
@@ -69,7 +78,8 @@
 		public function enter(){
 			if ($this->session->userdata('username')!= '') {
 				echo $this->session->userdata('username');
-				$this->load->view('pages/course_ict');
+				$data['username'] = $this->session->userdata('username');
+				$this->load->view('pages/course_ict', $data);
 			}else{
 				redirect(base_url() . 'pages/view/login');
 			}
