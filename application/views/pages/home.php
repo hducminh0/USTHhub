@@ -129,14 +129,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
-            <p class="lead">This is a fucking awesome place to talk about your shits. This page is full of shitty stuff so you can laugh the shit out of your lung all day long and forget about life.</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
+            <h2>About</h2>
+            <p class="lead"> University of Science and Technology of Hanoi (USTH), also – called “Vietnam-France University”, is an unique International Standard Public University in Hanoi established in 2009 under the Intergovernmental Agreement between Vietnam and France signed on November, 12th 2009, following the decision number 2067/QĐ-TTg on December, 9th 2009 made by the Prime Minister.<br>
+
+As a public university modeled according to international standards,  USTH is being built with funds from the Government of Viet Nam and a strong support from the French Government, Vietnam Academy of Science and Technology (VAST), Asian Development Bank and the Consortium of 42 universities and researching organizations of France.<br>
+
+USTH always focuses on promoting the high quality of training courses in parallel with research activities and strong connections with the leading companies in science and technology in Vietnam.</p>
+            
           </div>
         </div>
       </div>
@@ -158,7 +157,29 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact us</h2>
-            <p class="lead">Ahihi</p>
+            <p class="lead">
+University of Science and Technology of Hanoi
+Training and Services Bulding, Vietnam Academy of Science and Technology 
+Add: 18 Hoang Quoc Viet, Cau Giay District, Hanoi 
+Tel: (+84- 24) 37 91 69 60 
+Email: usth.info@usth.edu.vn 
+
+Bachelor
+Tel: (+84- 24) 37 91 77 48 
+Email: admission@usth.edu.vn 
+
+Master
+Tel: (+84- 24) 37 91 77 47 / 37 91 86 18
+PMAB: admission-bio@usth.edu.vn 
+AMSN: admission-nano@usth.edu.vn 
+ICT: admission-ict@usth.edu.vn 
+WEO: admission-weo@usth.edu.vn 
+SA: admission-space@usth.edu.vn 
+EN: admission-energy@usth.edu.vn 
+
+Student Affairs
+Tel: (+84- 24) 37 91 72 05 
+Email: pham-thi-thanh.nga@usth.edu.vn </p>
           </div>
         </div>
       </div>

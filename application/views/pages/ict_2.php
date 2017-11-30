@@ -66,10 +66,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>home#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>home#contact">Contact</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
@@ -120,7 +120,7 @@
     <header class="bg-light text-black">
       <div class="container text-left">
         <h1>Information and Communication Technology: Second Year</h1>
-        <p class="lead">The ting goes skrrrahh, pap, pap, ka-ka-ka. Skidiki-pap-pap, and a pu-pu-pudrrrr-boom. Skya, du-du-ku-ku-dun-dun. Poom, poom, you don' know.</p>
+        <p class="lead">The ICT formation in USTH prepares graduates for careers in the fields of Software Engineering and Computer Science. It equips students with the fundamental understanding of computing, system administration, professional knowledge of information systems, advance databases and project management.</p>
       </div>
     </header>
 

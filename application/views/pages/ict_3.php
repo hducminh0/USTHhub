@@ -66,10 +66,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>home#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>home#contact">Contact</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
@@ -121,7 +121,7 @@
     <header class="bg-light text-black">
       <div class="container text-left">
         <h1>Information and Communication Technology: Third Year</h1>
-        <p class="lead">The ting goes skrrrahh, pap, pap, ka-ka-ka. Skidiki-pap-pap, and a pu-pu-pudrrrr-boom. Skya, du-du-ku-ku-dun-dun. Poom, poom, you don' know.</p>
+        <p class="lead">The ICT formation in USTH prepares graduates for careers in the fields of Software Engineering and Computer Science. It equips students with the fundamental understanding of computing, system administration, professional knowledge of information systems, advance databases and project management.</p>
       </div>
     </header>
 
@@ -130,29 +130,24 @@
       <table class="table table-bordered table-primary">
         <thead>
           <tr class="table-secondary text-center">
-            <th colspan="7">27 thg 11 – 3 thg 12, 2017</th>
+            <th colspan="7"></th>
           </tr>
           <tr class="table-danger text-center">
             <th scope="col"></th>
-            <th class="col-md-2" scope="col">Mon, 27/11</th>
-            <th class="col-md-2" scope="col">Tue, 28/11</th>
-            <th class="col-md-2" scope="col">Wed, 29/11</th>
-            <th class="col-md-2" scope="col">Thus, 30/11</th>
-            <th class="col-md-2" scope="col">Fri, 1/12</th>
-            <th class="col-md-2" scope="col">Sat, 2/12</th>
+            <?php foreach ($timetable_date as $timetable_date) : ?>
+              <th class="col-md-2" scope="col"><?php echo $timetable_date['ClassDate']; ?></th>
+            <?php endforeach; ?>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th class="table-danger" scope="row">1</th>
-            <td></td>
-            <td>08:30 – 12:00<br>Mobile apps application - Dr. Tran Giang Son - 604/USTH</td>
-            <td>08:30 – 11:30<br>Image Processing - Dr. Nghiem Thi Phuong - 710/USTH</td>
-            <td></td>
-            <td>08:30 – 11:30<br>Image Processing - Dr. Nghiem Thi Phuong - 710/USTH</td>
-            <td></td>
+            <?php foreach ($timetable as $timetable) : ?>
+              <td><?php echo $timetable['StartTime'].' - '.$timetable['EndTime'] ?><br>
+              <?php echo $timetable['CourseName'].' - '.$timetable['Fullname'].' - '.$timetable['Room'] ?></td>
+            <?php endforeach; ?>
           </tr>
-          <tr>
+          <!-- <tr>
             <th class="table-danger" scope="row">2</th>
             <td>14:00 – 16:00<br>Final exam: Object-Oriented System Analysis and Design, 710/USTH</td>
             <td>16:00 – 18:00<br>Future Tech Talents - USTH Auditorium</td>
@@ -160,20 +155,13 @@
             <td>14:00 – 16:00<br>Final exam: Web apps development, 710/USTH</td>
             <td></td>
             <td></td>
-          </tr>
-          <tr>
-            <th class="table-danger" scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          </tr> -->
+          <tr class="table-secondary text-center">
+            <th colspan="7"></th>
           </tr>
         </tbody>
       </table>
     </div>
-
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
