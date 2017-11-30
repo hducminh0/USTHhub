@@ -80,7 +80,7 @@
     </nav>
 
     <!-- <header class="bg-primary text-white">
-      <div class="container text-center"> --><!-- 
+      <div class="container text-center"> --><!--
         <h1>Welcome to USTHhub</h1>
         <p class="lead">The ting goes skrrrahh, pap, pap, ka-ka-ka. Skidiki-pap-pap, and a pu-pu-pudrrrr-boom. Skya, du-du-ku-ku-dun-dun. Poom, poom, you don' know.</p> -->
         <div id="demo" class="carousel slideshow row " data-ride="carousel">
@@ -124,7 +124,7 @@
 As a public university modeled according to international standards,  USTH is being built with funds from the Government of Viet Nam and a strong support from the French Government, Vietnam Academy of Science and Technology (VAST), Asian Development Bank and the Consortium of 42 universities and researching organizations of France.<br>
 
 USTH always focuses on promoting the high quality of training courses in parallel with research activities and strong connections with the leading companies in science and technology in Vietnam.</p>
-            
+
           </div>
         </div>
       </div>
@@ -168,14 +168,21 @@ USTH always focuses on promoting the high quality of training courses in paralle
     <section id="contact">
       <div class="container-fluid">
          <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <h2>Contact us</h2>
-             <p class="lead">Ahihi</p>
+           <div class="col-lg-2 ml-auto">
+             <img src="<?php echo base_url() ?>assets/image/logo-moi_2.jpg" class="vertical-center" height="130" width="210">
            </div>
-          
-         
+           <div class="col-lg-6 mr-auto">
+             <h2>Contact us</h2>
+             <p class="lead">
+               <strong>UNIVERSITY OF SCIENCE AND TECHNOLOGY OF HANOI</strong>
+             	<br>
+             	<p title="Address">Address:<br> Vietnam Academy of Science and Technolgy 18 Hoang Quoc Viet,<br> Cau Giay, Ha Noi, Viet Nam</p>
+             	<p title="Telephone">Telephone: <br> +84-24 37 91 69 60</p>
+             	<p title="Email">Email:<br> <a href="mailto:usth.info@usth.edu.vn">usth.info@usth.edu.vn</a></p>
+             </p>
+           </div>
          </div>
-       
+
        </div>
      </section>
 
