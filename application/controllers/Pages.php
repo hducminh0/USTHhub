@@ -25,6 +25,7 @@
 			{	
 				$data['timetable_date'] = $this->ict_table_model->get_timetable_ict2();
 				$data['timetable'] = $data['timetable_date'];
+				$data['temp'] = 0;
 				$data['title'] = ucfirst($page);
 				$this->load->view('pages/'.$page, $data);
 			}

@@ -30,7 +30,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_2">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_3">3th year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_3">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -38,7 +38,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -46,7 +46,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -62,7 +62,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -73,7 +73,6 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
-            <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
             <li class="nav-item"><a onclick="document.getElementById('id01').style.display='block'" href="#" class="nav-link">Login</a></li>
 
             <!-- popuplogin -->
@@ -135,7 +134,7 @@
           <tr class="table-danger text-center">
             <th scope="col"></th>
             <?php foreach ($timetable_date as $timetable_date) : ?>
-              <th class="col-md-2" scope="col"><?php echo $timetable_date['ClassDate']; ?></th>
+              <th class="col-md-2" scope="col"><?php echo $timetable_date['Date']; ?></th>
             <?php endforeach; ?>
           </tr>
         </thead>

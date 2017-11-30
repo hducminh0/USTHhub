@@ -30,7 +30,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_2">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_3">3th year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url(); ?>pages/view/ict_3">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -38,7 +38,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -46,7 +46,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -62,7 +62,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">3th year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
               </ul>
             </li>
             <li class="nav-item">
