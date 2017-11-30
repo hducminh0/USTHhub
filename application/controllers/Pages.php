@@ -1,5 +1,6 @@
 <?php
 	class Pages extends CI_Controller{
+		
 		public function view ($page = 'home'){
 			if(!file_exists(APPPATH.'/views/pages/'.$page.'.php')){
 				show_404();
@@ -45,7 +46,6 @@
 					$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
 					$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
 					$data['completed'] = $this->Course_model->get_ict3_courses_completed();
-					$data['title'] = $page;
 					$this->load->view('pages/'.$page, $data);
 				}
 
@@ -86,7 +86,7 @@
 		}
 		public function logout(){
 			$this->session->unset_userdata('username');
-			redirect(base_url() . 'pages/view/login');
+			redirect(base_url());
 		}
 	}
 ?>

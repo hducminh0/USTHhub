@@ -18,13 +18,17 @@
 			if (!$this->upload->do_upload('userfile')) 
 			{
 				$error = array('error' => $this->upload->display_errors());
-				$this->load->view('upload_form', $error);
+				$this->load->view('upload_fail', $error);
 			}
 			else
 			{
 				$data = array('upload_data' => $this->upload->data());
+				$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
+				$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
+				$data['completed'] = $this->Course_model->get_ict3_courses_completed();
+				$data['mobile'] = $this->Course_model->get_ict3_mobile();
 				// $this->File_model->put_file_db($data);
-				$this->load->view('upload_success', $data);
+				$this->load->view('pages/1', $data);
 			}	
 		}
 	}

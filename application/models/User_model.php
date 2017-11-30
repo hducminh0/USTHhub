@@ -4,8 +4,8 @@
 			$this->load->database();
 		}
 
-		public function get_user($id){
-			$query = $this->db->query("SELECT Fullname, Email FROM user WHERE ")
+		public function get_user($user){
+			// $query = $this->db->query("SELECT Fullname, Email FROM user WHERE ");
 			return $query->return_array()
 		}
 	}

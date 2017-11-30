@@ -88,6 +88,7 @@
             <span class="d-lg-none">Profile
               <!-- <span class="badge badge-pill badge-warning">6 New</span> -->
             </span>
+
             <!-- <span class="indicator text-warning d-none d-lg-block">
               <i class="fa fa-fw fa-circle"></i>
             </span> -->
@@ -112,7 +113,7 @@
       </ol>
       <div class="row">
         <div class="col-12">
-          <h2>Profile</h2>
+          <h2>Profile <?php echo $title; ?></h2>
           
 
         </div>
@@ -147,7 +148,7 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <a class="btn btn-primary" href="<?php echo base_url()?>pages/logout">Logout</a>
           </div>
         </div>
       </div>
