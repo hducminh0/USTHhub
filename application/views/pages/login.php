@@ -142,18 +142,24 @@
       </div>
     </nav>
 
-            <form action="/action_page.php">
+            <form method="post" action="<?php echo base_url(); ?>pages/login_validation">
               <div class="imgcontainer">
                 <img src="<?php echo base_url() ?>assets/image/user.png" alt="Avatar" class="avatar">
               </div>
               <div id="login" class="container">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="Enter email" name="username">
+            <span class="text-danger"><?php echo form_error('username');?></span>
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password" name="password">
+            <span class="text-danger"><?php echo form_error('password');?></span>
+            
+                <input class="btn btn-info" type="submit" name="insert" value="Login" style="width: 1085px;">
+                <?php 
+                  echo $this->session->flashdata("error");
+                ?>
 
-                <button type="submit">Login</button>
                 <input type="checkbox" checked="checked"> Remember me
 
                 <div id="cc" style="background-color:#f1f1f1">

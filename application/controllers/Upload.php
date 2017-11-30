@@ -11,8 +11,8 @@
 
 		public function do_upload(){
 			$config['upload_path'] = './uploads/';
-			$config['allowed_types'] = 'pdf|c|cpp|m|python|ppt|rar|zip|txt|tex';
-			$config['max_size'] = 100000;
+			$config['allowed_types'] = 'pdf|c|cpp|m|python|pptx|rar|zip|txt|tex';
+			$config['max_size'] = 100000; //kB
 
 			$this->load->library('upload', $config);
 			if (!$this->upload->do_upload('userfile')) 
@@ -23,6 +23,7 @@
 			else
 			{
 				$data = array('upload_data' => $this->upload->data());
+				// $this->File_model->put_file_db($data);
 				$this->load->view('upload_success', $data);
 			}	
 		}

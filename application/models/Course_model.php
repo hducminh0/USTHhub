@@ -21,22 +21,22 @@
 		}
 
 		public function get_ict3_mobile(){
-			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, course.Status from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 1;");
+			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, user.Email from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 1;");
 			return $query->result_array();
 		}
 
 		public function get_ict3_web(){
-			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, course.Status from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 3;");
+			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, user.Email from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 3;");
 			return $query->result_array();
 		}
 
 		public function get_ict3_oosad(){
-			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, course.Status from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 4;");
+			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, user.Email from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 4;");
 			return $query->result_array();
 		}
 
 		public function get_ict3_data(){
-			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, course.Status from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 6;");
+			$query = $this->db->query("SELECT course.CourseName, course.Credits, course.Hours, course.Description, user.Fullname, user.Email from course inner JOIN user on course.UserID = user.UserID WHERE course.CourseID = 6;");
 			return $query->result_array();
 		}
 

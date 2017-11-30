@@ -1,4 +1,6 @@
-  <!DOCTYPE html>
+<!-- mobile app -->
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -122,11 +124,13 @@
           <a href="#">Dashboard</a>
         </li>
         <li class="breadcrumb-item active">Ongoing</li>
-        <li class="breadcrumb-item active">Specific Course</li>
+        <li class="breadcrumb-item active"><?php foreach ($mobile as $mobile){
+          echo $mobile['CourseName'];
+        } ?></li>
       </ol>
 
       <div class="col-12">
-          <h2>Specific Course</h2>
+          <h2><?php echo $mobile['CourseName']; ?></h2>
           <br>
 
       <!-- Nav tabs -->
@@ -151,16 +155,26 @@
   
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel"></div>
+  <div class="tab-pane active" id="home" role="tabpanel">
+    <?php echo $mobile['Description']; ?><br>
+    <?php echo $mobile['Credits']; ?><br>
+    <?php echo $mobile['Hours']; ?><br>
+    <?php echo $mobile['Fullname']; ?><br>
+    <?php echo $mobile['Email']; ?><br>
+  </div>
   <div class="tab-pane" id="profile" role="tabpanel"></div>
   <div class="tab-pane" id="messages" role="tabpanel">
 
     <h1>Homework Upload</h1>
 
-<div class="upload">
+  <div class="upload">
       <h3>Select File</h3>
-    <div class="login-form">
-      <form>
+      <?php echo form_open_multipart('upload/do_upload'); ?>
+      <input type="file" name="userfile" size="20">
+      <br><br>
+      <input type="submit" name="upload">
+    </form>
+      <!-- form>
           <div>
           <span id="student_name">Student Name</span>
             <input type="text" class="title" value= "Eg: Ta Chien Long" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
@@ -169,9 +183,9 @@
           <span id="description_form">Description</span>
             <input type="text" class="describe" value="Eg: Noob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
         </div>
-      </form>
+      </form> -->
 
-      <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+     <!--  <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
         <div id="drop">
         <a>Upload</a>
         <input type="file" name="upl" multiple />
@@ -180,9 +194,9 @@
         
         <ul>
         <!-- The file uploads will be shown here -->
-        </ul>
+        <!-- </ul>
 
-      </form>
+      </form> -->
     </div>
 
       
@@ -248,7 +262,7 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <a class="btn btn-primary" href="<?php echo base_url()?>pages/logout">Logout</a>
           </div>
         </div>
       </div>
