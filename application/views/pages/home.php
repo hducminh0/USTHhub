@@ -94,13 +94,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="<?php echo base_url() ?>assets/image/usth.jpg" alt="Los Angeles" width="100%" height="600">
+            <img src="<?php echo base_url() ?>assets/image/usth.jpg" alt="Los Angeles" width="100%" height="700">
           </div>
           <div class="carousel-item">
-            <img src="<?php echo base_url() ?>assets/image/usthhall.jpg" alt="Chicago" width="100%" height="600">
+            <img src="<?php echo base_url() ?>assets/image/usthhall.jpg" alt="Chicago" width="100%" height="700">
           </div>
           <div class="carousel-item">
-            <img src="<?php echo base_url() ?>assets/image/USTHCampus03.jpg" alt="campus" width="100%" height="600">
+            <img src="<?php echo base_url() ?>assets/image/USTHCampus03.jpg" alt="campus" width="100%" height="700">
           </div>
         </div>
 
@@ -183,7 +183,7 @@ USTH always focuses on promoting the high quality of training courses in paralle
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container text-white">
-+        <p class="m-0 text-center">Copyright &copy; USTHhub 2017</p>
+        <p class="m-0 text-center">Copyright &copy; USTHhub 2017</p>
       </div>
       <!-- /.container -->
     </footer>

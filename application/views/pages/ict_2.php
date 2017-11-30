@@ -66,10 +66,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>home#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>home#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#contact">Contact</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" id="abc">
@@ -80,7 +80,7 @@
       </div>
     </nav>
 
-    <header class="bg-light text-black">
+    <header class=" text-black">
       <div class="container text-left">
         <h1>Information and Communication Technology: Second Year</h1>
         <p class="lead">The ICT formation in USTH prepares graduates for careers in the fields of Software Engineering and Computer Science. It equips students with the fundamental understanding of computing, system administration, professional knowledge of information systems, advance databases and project management.</p>
@@ -88,14 +88,15 @@
     </header>
 
     <!-- table -->
-    <div class="container">
+    <!-- <section id="services"> -->
+    <div class="container col-md-10">
       <table class="table table-bordered table-primary">
         <thead>
           <tr class="table-secondary text-center">
-            <th colspan="7"></th>
+            <th colspan="7"><h3 style="font-weight: bold;">Timetable</h3></th>
           </tr>
           <tr class="table-danger text-center">
-            <th scope="col"></th>
+            <!-- <th scope="col"></th> -->
             <?php foreach ($timetable_date as $timetable_date) : ?>
               <th class="col-md-2" scope="col"><?php echo $timetable_date['Date']; ?></th>
             <?php endforeach; ?>
@@ -103,9 +104,9 @@
         </thead>
         <tbody>
           <tr>
-            <th class="table-danger" scope="row">1</th>
+            <!-- <th class="table-danger" scope="row"></th> -->
             <?php foreach ($timetable as $timetable) : ?>
-              <td><?php echo $timetable['StartTime'].' - '.$timetable['EndTime'] ?><br>
+              <td height="200"><br><br><?php echo $timetable['StartTime'].' - '.$timetable['EndTime'] ?><br>
               <?php echo $timetable['CourseName'].' - '.$timetable['Fullname'].' - '.$timetable['Room'] ?></td>
             <?php endforeach; ?>
           </tr>
@@ -124,9 +125,9 @@
         </tbody>
       </table>
     </div>
-
+<!-- </section> -->
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark fixed-bottom">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; USTHhub 2017</p>
       </div>
