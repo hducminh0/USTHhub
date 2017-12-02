@@ -23,29 +23,26 @@
 			}
 
 			if ($this->session->userdata('username') != '') {
+				$user= $this->session->__get('username');
+				$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
+				$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
+				$data['completed'] = $this->Course_model->get_ict3_courses_completed();	
 				if ($page == 'course_ict') 
 				{
 					$data['timetable_date'] = $this->ict_table_model->get_timetable_ict2();
 					$data['timetable'] = $data['timetable_date'];
-					$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
-					$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
-					$data['completed'] = $this->Course_model->get_ict3_courses_completed();
+					
 					$this->load->view('pages/'.$page, $data);
 				}
 				elseif ($page == '1') //mobile
 				{	
-					$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
-					$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
-					$data['completed'] = $this->Course_model->get_ict3_courses_completed();
+					$data['homework'] = $this->File_model->get_file_db($user);
 					$data['mobile'] = $this->Course_model->get_ict3_mobile();
 					$this->load->view('pages/'.$page, $data);
 				}
 				elseif ($page == 'profile') 
 				{
-					// $data['profile'] = $this->User_model->
-					$data['ongoing'] = $this->Course_model->get_ict3_courses_ongoing();
-					$data['upcomming'] = $this->Course_model->get_ict3_courses_upcomming();
-					$data['completed'] = $this->Course_model->get_ict3_courses_completed();
+					$data['profile'] = $this->User_model->get_user($user);
 					$this->load->view('pages/'.$page, $data);
 				}
 

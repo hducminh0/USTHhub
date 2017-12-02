@@ -20,7 +20,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="<?php echo base_url() ?>pages/view/course_ict">USTHhub</a>
+    <a class="navbar-brand ml-auto" href="<?php echo base_url() ?>pages/view/course_ict"><img width="140" height="40" src="<?php echo base_url() ?>assets/image/logo.png"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -80,15 +80,13 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
-
+     <ul id="logoutbtn" class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link mr-lg-2" href="<?php echo base_url() ?>pages/view/profile" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-fw fa-user-circle-o"></i>
+            <i class="fa fa-fw fa-user-circle-o" style="color: #007bff"></i>
             <span class="d-lg-none">Profile
               <!-- <span class="badge badge-pill badge-warning">6 New</span> -->
             </span>
-
             <!-- <span class="indicator text-warning d-none d-lg-block">
               <i class="fa fa-fw fa-circle"></i>
             </span> -->
@@ -96,8 +94,8 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: #007bff">
+            <i class="fa fa-fw fa-sign-out" style="color: #007bff"></i>Logout</a>
         </li>
       </ul>
     </div>
@@ -113,8 +111,14 @@
       </ol>
       <div class="row">
         <div class="col-12">
-          <h2>Profile <?php echo $title; ?></h2>
-          
+          <h2>Profile</h2>
+          <?php foreach ($profile as $profile) ?>
+             <div class=" row" style="margin-left: 40px"><img id="lecturer_photo" src="<?php echo base_url() ?>assets/image/<?php echo $profile['Username'].'.jpg' ?>" width="150" height="250" style="margin-top: 20px" class="rounded-circle col-md-2" >
+            <div class="col-md-4" style="margin-top: 90px">
+              <p id="course_lecturer_name" style="margin-top: 20px; margin-left: 20px"><?php echo $profile['Fullname']; ?></p>
+              <p id="course_lecturer_name" style="margin-top: 20px; margin-left: 20px"><?php echo $profile['Email']; ?></p>
+            </div>
+            </div>
 
         </div>
 
@@ -127,7 +131,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>USTHhub 2017</small>
+          <p class="m-0 text-center text-black">Copyright &copy; USTHhub 2017</p>
         </div>
       </div>
     </footer>

@@ -79,7 +79,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger ml-auto" href="<?php echo base_url() ?>">USTHhub</a>
+        <a class="navbar-brand ml-auto" href="<?php echo base_url() ?>pages/view/home"><img width="140" height="40" src="<?php echo base_url() ?>assets/image/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -91,9 +91,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#ict">I.C.T<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="<?php echo base_url() ?>pages/view/ict_2.html">2nd year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url() ?>pages/view/ict_2">2nd year</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="<?php echo base_url() ?>pages/view/ict_3.html">3th year</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url() ?>pages/view/ict_3">3th year</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -146,7 +146,7 @@
               <div class="imgcontainer">
                 <img src="<?php echo base_url() ?>assets/image/user.png" alt="Avatar" class="avatar">
               </div>
-              <div id="login" class="container">
+              <div id="login" class="col-md-4 container">
                 <label><b>Username</b></label>
                 <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="Enter email" name="username">
             <span class="text-danger"><?php echo form_error('username');?></span>
@@ -155,12 +155,11 @@
                 <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password" name="password">
             <span class="text-danger"><?php echo form_error('password');?></span>
             
-                <input class="btn btn-info" type="submit" name="insert" value="Login" style="width: 1085px;">
+                <input class="btn btn-info col-md-12" type="submit" name="insert" value="Login" style="background-color: #007BFF">
                 <?php 
                   echo $this->session->flashdata("error");
                 ?>
 
-                <input type="checkbox" checked="checked"> Remember me
 
                 <div id="cc" style="background-color:#f1f1f1">
                   <button type="button" class="cancelbtn">Cancel</button>

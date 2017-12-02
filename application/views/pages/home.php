@@ -16,7 +16,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand js-scroll-trigger ml-auto" href="<?php echo base_url() ?>">USTHhub</a>
+        <a class="navbar-brand ml-auto" href="<?php echo base_url() ?>pages/view/home"><img width="140" height="40" src="<?php echo base_url() ?>assets/image/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -169,7 +169,7 @@ USTH always focuses on promoting the high quality of training courses in paralle
       <div class="container-fluid">
          <div class="row">
            <div class="col-lg-2 ml-auto">
-             <img src="<?php echo base_url() ?>assets/image/logo-moi_2.jpg" class="vertical-center" height="130" width="210">
+             <img src="<?php echo base_url() ?>assets/image/logo-moi_2.png" class="vertical-center" height="130" width="210">
            </div>
            <div class="col-lg-6 mr-auto">
              <h2>Contact us</h2>

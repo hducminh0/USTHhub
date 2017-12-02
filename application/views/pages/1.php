@@ -32,7 +32,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="<?php echo base_url() ?>pages/view/course_ict">USTHhub</a>
+    <a class="navbar-brand ml-auto" href="<?php echo base_url() ?>pages/view/course_ict"><img width="140" height="40" src="<?php echo base_url() ?>assets/image/logo.png"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -94,12 +94,10 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
-        
-        
+      <ul id="logoutbtn" class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link mr-lg-2" href="<?php echo base_url() ?>pages/view/profile" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-fw fa-user-circle-o"></i>
+            <i class="fa fa-fw fa-user-circle-o" style="color: #007bff"></i>
             <span class="d-lg-none">Profile
               <!-- <span class="badge badge-pill badge-warning">6 New</span> -->
             </span>
@@ -110,8 +108,8 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: #007bff">
+            <i class="fa fa-fw fa-sign-out" style="color: #007bff"></i>Logout</a>
         </li>
       </ul>
     </div>
@@ -139,79 +137,86 @@
     </div>
 
     <ul class="nav nav-tabs" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Description</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Lecture</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Homework</a>
-  </li>
-</ul>
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Description</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Lecture</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Homework</a>
+      </li>
+    </ul>
   
 <!-- Tab panes -->
-<div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel">
-    <?php echo $mobile['Description']; ?><br>
-    <?php echo $mobile['Credits']; ?><br>
-    <?php echo $mobile['Hours']; ?><br>
-    <?php echo $mobile['Fullname']; ?><br>
-    <?php echo $mobile['Email']; ?><br>
-  </div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel">
+      <div class="row">
+        <div class="co<l-12 col-lg-2">
+          
+            <p id="course_description">Descriptions:</p> 
+          
+        </div>
+        <div class="col-12 col-lg-9">
+          <p id="course_description_details"><?php echo $mobile['Description']; ?></p>
+        </div>   
+      </div>
+      <div class="row">
+        <div class="col-lg-2">
+          <p id="course_ects" style="padding-top: 10px">Number of ECTS:</p>
+        </div>
+        <div class="col-lg-9">
+          <p id="course_ects_details"><?php echo $mobile['Credits']; ?></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2">
+          <p id="course_hours" style="padding-top: 10px">Number of hours:</p>
+        </div>
+        <div class="col-lg-9">
+          <p id="course_hours_details"><?php echo $mobile['Hours']; ?></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-lg-2">
+          <p id="course_lecturer" style="padding-top: 60px">Lecturer:</p>
+        </div>
+        <div class=" col-lg-2"><img id="lecturer_photo" src="<?php echo base_url() ?>/assets/image/sontg.jpg" class="rounded-circle" alt="Dr.Tran Giang Son's photo">
+          <p id="course_lecturer_name" style="margin-top: 20px; margin-left: 20px"><?php echo $mobile['Fullname']; ?></p>
+          <p id="course_lecturer_name" style="margin-top: 20px; margin-left: 20px"><?php echo $mobile['Email']; ?></p>
+        </div>
+      </div>
+         
+    </div>
+  
   <div class="tab-pane" id="profile" role="tabpanel"></div>
+
   <div class="tab-pane" id="messages" role="tabpanel">
 
     <h1>Homework Upload</h1>
 
-  <div class="upload">
-      <h3>Select File</h3>
-      <?php echo form_open_multipart('upload/do_upload'); ?>
-      <input type="file" name="userfile" size="20">
-      <br><br>
-      <input type="submit" name="upload">
-    </form>
-      <!-- form>
-          <div>
-          <span id="student_name">Student Name</span>
-            <input type="text" class="title" value= "Eg: Ta Chien Long" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-        </div>
-        <div>
-          <span id="description_form">Description</span>
-            <input type="text" class="describe" value="Eg: Noob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-        </div>
-      </form> -->
-
-     <!--  <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-        <div id="drop">
-        <a>Upload</a>
-        <input type="file" name="upl" multiple />
-      </div>
-
-        
-        <ul>
-        <!-- The file uploads will be shown here -->
-        <!-- </ul>
-
-      </form> -->
+    <div class="upload">
+        <h3>Select File</h3>
+        <?php echo form_open_multipart('upload/do_upload'); ?>
+        <input type="file" name="userfile" size="20">
+        <br><br>
+        <input type="submit" name="upload">
+      </form>
     </div>
+    <br>
+<br>
 
-      
-  <!-- JavaScript Includes -->
-    <script src="<?php echo base_url(); ?>assets/js/jquery.knob.js"></script>
-  <!-- JavaScript Includes -->
+<hr>
 
-  <!-- jQuery File Upload Dependencies -->
-    <script src="<?php echo base_url(); ?>assets/js/jquery.ui.widget.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/jquery.iframe-transport.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/jquery.fileupload.js"></script>
-  <!-- jQuery File Upload Dependencies -->
-    
-  <!-- Main JavaScript file -->
-    <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
-  <!-- Main JavaScript file -->
-  
-</div>
+<p style="margin-left: 40px">
+    <?php foreach($homework as $homework) : ?>
+      <a href="<?php echo base_url()."upload/download_files/".$homework['FileName'] ?>"><?php echo $homework['FileName']; ?></a> - 
+      <?php echo $homework['FullName'] ?> <br>
+    <?php endforeach ?>
+  </p>
+<hr>
+
+  </div>
 
 
   </div>
@@ -238,7 +243,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>USTHhub 2017</small>
+          <p class="m-0 text-center text-black">Copyright &copy; USTHhub 2017</p>
         </div>
       </div>
     </footer>

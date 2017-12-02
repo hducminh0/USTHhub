@@ -23,7 +23,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="<?php echo base_url(); ?>pages/view/course_ict">USTHhub</a>
+    <a class="navbar-brand ml-auto" href="<?php echo base_url() ?>pages/view/course_ict"><img width="140" height="40" src="<?php echo base_url() ?>assets/image/logo.png"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -85,12 +85,10 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
-        
-        
+      <ul id="logoutbtn" class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link mr-lg-2" href="<?php echo base_url() ?>pages/view/profile" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-fw fa-user-circle-o"></i>
+            <i class="fa fa-fw fa-user-circle-o" style="color: #007bff"></i>
             <span class="d-lg-none">Profile
               <!-- <span class="badge badge-pill badge-warning">6 New</span> -->
             </span>
@@ -101,8 +99,8 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: #007bff">
+            <i class="fa fa-fw fa-sign-out" style="color: #007bff"></i>Logout</a>
         </li>
       </ul>
     </div>
